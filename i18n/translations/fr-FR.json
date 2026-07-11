@@ -156,7 +156,7 @@
     "Loading..": "Chargement..",
     "Locale": "Paramètres régionaux",
     "Location": "Emplacement",
-    "Max leak sats": "Fuite max. sats",
+    "Max fee rate sat/vB": "Frais max. sat/vB",
     "Max rounds": "Tours max.",
     "Maximum length exceeded (%s)": "Longueur maximale dépassée (%s)",
     "Message": "Message",

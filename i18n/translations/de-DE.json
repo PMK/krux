@@ -156,7 +156,7 @@
     "Loading..": "Wird geladen..",
     "Locale": "Spracheinstellung",
     "Location": "Speicherort",
-    "Max leak sats": "Max. Leak sats",
+    "Max fee rate sat/vB": "Max. Gebührensatz sat/vB",
     "Max rounds": "Max. Runden",
     "Maximum length exceeded (%s)": "Maximale Länge überschritten (%s)",
     "Message": "Nachricht",

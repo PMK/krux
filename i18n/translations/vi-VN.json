@@ -156,7 +156,7 @@
     "Loading..": "Đang tải..",
     "Locale": "Ngôn ngữ",
     "Location": "Vị trí lưu",
-    "Max leak sats": "Rò rỉ tối đa sats",
+    "Max fee rate sat/vB": "Phí tối đa sat/vB",
     "Max rounds": "Vòng tối đa",
     "Maximum length exceeded (%s)": "Chiều dài tối đa vượt quá (%s)",
     "Message": "Tin nhắn",

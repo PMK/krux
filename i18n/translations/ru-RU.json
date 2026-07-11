@@ -156,7 +156,7 @@
     "Loading..": "Загрузка..",
     "Locale": "Локаль",
     "Location": "Расположение",
-    "Max leak sats": "Макс. утечка sats",
+    "Max fee rate sat/vB": "Макс. ставка sat/vB",
     "Max rounds": "Макс. раундов",
     "Maximum length exceeded (%s)": "Максимальная длина превышена (%s)",
     "Message": "Сообщение",

@@ -156,7 +156,7 @@
     "Loading..": "Ładowanie..",
     "Locale": "Widownia",
     "Location": "Lokalizacja",
-    "Max leak sats": "Maks. wyciek sats",
+    "Max fee rate sat/vB": "Maks. stawka opłaty sat/vB",
     "Max rounds": "Maks. rund",
     "Maximum length exceeded (%s)": "Maksymalna długość przekroczona (%s)",
     "Message": "Wiadomość",

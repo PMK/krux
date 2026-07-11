@@ -156,7 +156,7 @@
     "Loading..": "Carregando..",
     "Locale": "Idioma",
     "Location": "Local",
-    "Max leak sats": "Vazamento máx. sats",
+    "Max fee rate sat/vB": "Taxa máx. sat/vB",
     "Max rounds": "Rodadas máx.",
     "Maximum length exceeded (%s)": "Comprimento máximo excedido (%s)",
     "Message": "Mensagem",

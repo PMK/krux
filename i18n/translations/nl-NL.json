@@ -156,7 +156,7 @@
     "Loading..": "Laden...",
     "Locale": "Taal",
     "Location": "Opslaglocatie",
-    "Max leak sats": "Max. lek sats",
+    "Max fee rate sat/vB": "Max. fee rate sat/vB",
     "Max rounds": "Max. rondes",
     "Maximum length exceeded (%s)": "Maximale lengte overschreden (%s)",
     "Message": "Bericht",
