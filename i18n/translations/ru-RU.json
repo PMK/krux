@@ -161,7 +161,7 @@
     "Maximum length exceeded (%s)": "Максимальная длина превышена (%s)",
     "Message": "Сообщение",
     "Message:": "Сообщение:",
-    "Min self-transfer bps": "Мин. самоперевод bps",
+    "Min self-transfer %": "Мин. самоперевод %",
     "Missing signature file": "Отсутствует файл подписи",
     "Mnemonic": "Мнемоника",
     "Mnemonic ID": "ID Мнемоники",

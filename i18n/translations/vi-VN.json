@@ -161,7 +161,7 @@
     "Maximum length exceeded (%s)": "Chiều dài tối đa vượt quá (%s)",
     "Message": "Tin nhắn",
     "Message:": "Tin nhắn:",
-    "Min self-transfer bps": "bps tự chuyển tối thiểu",
+    "Min self-transfer %": "% tự chuyển tối thiểu",
     "Missing signature file": "Thiếu tập tin chữ ký",
     "Mnemonic": "Mã mnemonic",
     "Mnemonic ID": "Mnemonic ID ",

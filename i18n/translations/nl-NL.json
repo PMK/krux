@@ -161,7 +161,7 @@
     "Maximum length exceeded (%s)": "Maximale lengte overschreden (%s)",
     "Message": "Bericht",
     "Message:": "Bericht:",
-    "Min self-transfer bps": "Min. zelfoverdracht bps",
+    "Min self-transfer %": "Min. zelfoverdracht %",
     "Missing signature file": "Handtekening bestand mist",
     "Mnemonic": "Geheugensteun",
     "Mnemonic ID": "Geheugensteun ID",

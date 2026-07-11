@@ -161,7 +161,7 @@
     "Maximum length exceeded (%s)": "Maksimum uzunluk aşıldı (%s)",
     "Message": "Mesaj",
     "Message:": "Mesaj:",
-    "Min self-transfer bps": "Min. öz transfer bps",
+    "Min self-transfer %": "Min. öz transfer %",
     "Missing signature file": "İmza dosyası eksik",
     "Mnemonic": "Mnemonic",
     "Mnemonic ID": "Mnemonic ID",

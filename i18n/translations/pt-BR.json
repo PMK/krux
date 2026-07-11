@@ -161,7 +161,7 @@
     "Maximum length exceeded (%s)": "Comprimento máximo excedido (%s)",
     "Message": "Mensagem",
     "Message:": "Mensagem:",
-    "Min self-transfer bps": "bps mín. autotransferência",
+    "Min self-transfer %": "% mín. autotransferência",
     "Missing signature file": "Arquivo de assinatura faltando",
     "Mnemonic": "Mnemônico",
     "Mnemonic ID": "ID do mnemônico",
