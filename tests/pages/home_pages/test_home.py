@@ -313,6 +313,20 @@ def test_load_sign_message_menu(mocker, amigo):
     assert ctx.input.wait_for_button.call_count == len(BTN_SEQUENCE)
 
 
+def test_sign_coinjoin_psbt_uses_coinjoin_mode(mocker, amigo, tdata):
+    from krux.pages import MENU_CONTINUE
+    from krux.pages.home_pages.home import Home
+    from krux.wallet import Wallet
+
+    wallet = Wallet(tdata.SINGLESIG_12_WORD_KEY)
+    ctx = create_ctx(mocker, [], wallet)
+    home = Home(ctx)
+    mocker.patch.object(home, "sign_psbt", return_value=MENU_CONTINUE)
+
+    assert home.sign_coinjoin_psbt() == MENU_CONTINUE
+    home.sign_psbt.assert_called_once_with(coinjoin=True)
+
+
 def test_sign_psbt(mocker, m5stickv, tdata):
     from krux.pages.home_pages.home import Home
     from krux.wallet import Wallet

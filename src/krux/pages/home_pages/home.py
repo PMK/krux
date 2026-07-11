@@ -188,6 +188,7 @@ class Home(Page):
             self.ctx,
             [
                 ("PSBT", self.sign_psbt),
+                ("%s PSBT" % t("CoinJoin"), self.sign_coinjoin_psbt),
                 (t("Message"), self.sign_message),
                 (t("Back"), lambda: MENU_EXIT),
             ],
@@ -196,6 +197,10 @@ class Home(Page):
         if index == len(submenu.menu) - 1:
             return MENU_CONTINUE
         return status
+
+    def sign_coinjoin_psbt(self):
+        """Handler for the 'sign coinjoin psbt' menu item"""
+        return self.sign_psbt(coinjoin=True)
 
     def load_psbt(self):
         """Loads a PSBT from camera or SD card"""
@@ -234,7 +239,7 @@ class Home(Page):
         index, _ = sign_menu.run_loop()
         return index
 
-    def sign_psbt(self):
+    def sign_psbt(self, coinjoin=False):
         """Handler for the 'sign psbt' menu item"""
         from ...sd_card import (
             PSBT_FILE_EXTENSION,
@@ -362,11 +367,12 @@ class Home(Page):
         self.ctx.display.clear()
         self.ctx.display.draw_centered_text(t("Signing.."))
 
-        signer.sign()
+        sign_method = signer.sign_coinjoin if coinjoin else signer.sign
 
         title = t("Signed PSBT")
         if index == 0:
             # Sign to QR code
+            sign_method()
             qr_signed_psbt, qr_format = signer.psbt_qr()
 
             # memory management
@@ -382,6 +388,7 @@ class Home(Page):
             return MENU_CONTINUE
 
         # index == 1: Sign to SD card
+        sign_method(trim=False)
         from ..file_operations import SaveFile
 
         save_page = SaveFile(self.ctx)
