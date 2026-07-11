@@ -382,11 +382,36 @@ class SecuritySettings(SettingsNamespace):
     auto_shutdown = NumberSetting(int, "auto_shutdown", 10, [0, 60])
     hide_mnemonic = CategorySetting("hide_mnemonic", False, [False, True])
 
+    def __init__(self):
+        self.coinjoin = CoinJoinSettings()
+
     def label(self, attr):
         """Returns a label for UI when given a setting name or namespace"""
         return {
             "auto_shutdown": t("Shutdown Time"),
             "hide_mnemonic": t("Hide Mnemonics"),
+            "coinjoin": t("CoinJoin"),
+        }[attr]
+
+
+class CoinJoinSettings(SettingsNamespace):
+    """Policy-gated CoinJoin remote signing settings"""
+
+    namespace = "settings.security.coinjoin"
+    enabled = CategorySetting("enabled", False, [False, True])
+    min_self_transfer_bps = NumberSetting(
+        int, "min_self_transfer_bps", 9500, [0, 10000]
+    )
+    max_leak_sats = NumberSetting(int, "max_leak_sats", 0, [0, 2100000000000000])
+    max_rounds = NumberSetting(int, "max_rounds", 0, [0, 1000000])
+
+    def label(self, attr):
+        """Returns a label for UI when given a setting name or namespace"""
+        return {
+            "enabled": t("Enabled"),
+            "min_self_transfer_bps": t("Min self-transfer bps"),
+            "max_leak_sats": t("Max leak sats"),
+            "max_rounds": t("Max rounds"),
         }[attr]
 
 
